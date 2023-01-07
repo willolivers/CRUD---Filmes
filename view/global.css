@@ -1,3 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --color01: #550E81;
+    --color02: #550E81;
+    --color03: #F9FE04;
+    --color04: #00000079;
+    --color-text: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color01);
+    font-family: 'Inter', sans-serif;
+}
+=======
 @media (min-width: 402px) {
   .header {
     display: flex;
@@ -16,3 +38,4 @@
     padding: 1rem;
   }
 }
+
