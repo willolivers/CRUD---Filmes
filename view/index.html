@@ -7,23 +7,46 @@
     <link rel="stylesheet" href="/CRUD - Filmes/view/media.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRUD</title>
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="media.css" />
   </head>
   <body>
+    <div class="header">
+      <div class="header-left">Título</div>
+      <div class="header-right">
+        <div id="frame">
+          <a href="#" class="bars" class="menu-button">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </a>
+        </div>
+      </div>
+    </div>
 
-    <header>
-      <h1>CRUD</h1>
-      <menu>
-        <img src="svg/buttomMenu.svg" alt="">
-        <ul>
-          <li><a href="#">pesquisar</a></li>
-          <li><a href="#">adicionar</a></li>
-          <li><a href="#">fale conosco</a></li>
-          <li><a href="#">sobre</a></li>
-        </ul>
-      </menu>
-    </header>
+    <h1>CRUD</h1>
+    <div class="menu">
+      <a href="#">Pesquisar</a>
+      <a href="#">Adicionar</a>
+      <a href="#">Fale Conosco</a>
+      <a href="#">Sobre</a>
+    </div>
+    <script>
+      const upbar = document.querySelector(".bar1");
+      const middlebar = document.querySelector(".bar2");
+      const downbar = document.querySelector(".bar3");
+      const burguer = document.querySelector(".bars");
+      const menuButton = document.querySelector(".menu-button");
+      const menu = document.querySelector(".menu");
+
+      burguer.addEventListener("click", () => {
+        upbar.classList.toggle("upcross");
+        middlebar.classList.toggle("middlecross");
+        downbar.classList.toggle("downcross");
+        menu.classList.toggle("menuopen");
+      });
+    </script>
+
     <div>
       <section>filmes</section>
       <section>categorias</section>
@@ -31,13 +54,3 @@
     <footer>rodape</footer>
   </body>
 </html>
-
-    <div class="header">
-      <div class="header-left">Título</div>
-      <div class="header-right"><img src="logo.png" alt="Logo" /></div>
-    </div>
-
-    <h1 id="teste">Hello World!</h1>
-  </body>
-</html>
-
