@@ -20,6 +20,6 @@ addButton.addEventListener("click", () => {
 
 document.addEventListener("click", function (event) {
   if (event.target !== addMenu && event.target !== addButton) {
-    addMenu.classList.toggle("add-menuOpen");
+    addMenu.classList.replace("add-menuOpen", "add-menu");
   }
 });
