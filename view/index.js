@@ -24,3 +24,23 @@ document.addEventListener("click", function (event) {
   }
 });
 
+const filmes = [
+  {
+    titulo: "Thor: Amor e o Trovão",
+    lançamento: "2020",
+    elenco: "Chris Hemsworth, Tessa Thompson, Natalie Portman, Christian Bale",
+    gênero: "Ação",
+  },
+  {
+    titulo: "Encanto",
+    lançamento: "2021",
+    elenco: "Emily Blunt, Lin-Manuel Miranda, John Krasinski, Emily Mortimer",
+    gênero: "Comédia",
+  },
+  {
+    titulo: "Avatar: O Caminho da Água",
+    lançamento: "2022",
+    elenco: "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
+    gênero: "Ficção científica",
+  },
+];
