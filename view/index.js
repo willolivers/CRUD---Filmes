@@ -18,11 +18,9 @@ addButton.addEventListener("click", () => {
   addMenu.classList.toggle("add-menuOpen");
 });
 
-function form() {
-  document.addEventListener("click", function (event) {
-    if (event.target !== addMenu && event.target !== addButton) {
-      addMenu.classList.replace("add-menuOpen", "add-menu");
-    }
-  });
-  return
-}
+document.addEventListener("click", function (event) {
+  if (event.target !== addMenu && event.target !== addButton) {
+    addMenu.classList.replace("add-menuOpen", "add-menu");
+  }
+});
+
