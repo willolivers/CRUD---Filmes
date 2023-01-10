@@ -6,6 +6,8 @@ const menuButton = document.querySelector(".menu-button");
 const menu = document.querySelector(".menu");
 const addButton = document.querySelector(".add-button");
 const addMenu = document.querySelector(".add-menu");
+const buttonOption = document.querySelectorAll(".btnOpt");
+
 
 burguer.addEventListener("click", () => {
   upbar.classList.toggle("upcross");
@@ -19,10 +21,21 @@ addButton.addEventListener("click", () => {
 });
 
 document.addEventListener("click", function (event) {
-  if (event.target !== addMenu && event.target !== addButton) {
+  let found = false;
+  for (let i = 0; i < buttonOption.length; i++) {
+    if (event.target === buttonOption[i]) {
+      found = true;
+      break;
+    }
+  }
+  if (event.target !== addMenu && event.target !== addButton && !found) {
     addMenu.classList.replace("add-menuOpen", "add-menu");
   }
 });
+
+
+
+
 
 const filmes = [
   {
