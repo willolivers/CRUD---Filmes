@@ -8,6 +8,7 @@ const addButton = document.querySelector(".add-button");
 const addMenu = document.querySelector(".add-menu");
 const buttonOption = document.querySelectorAll(".btnOpt");
 const form = document.getElementById("formulario-filme");
+const sobreFilm = document.querySelector(".sobreFilme")
 
 burguer.addEventListener("click", () => {
   upbar.classList.toggle("upcross");
@@ -70,6 +71,16 @@ form.addEventListener("submit", (event) => {
     elenco: elenco,
     gênero: gênero,
   };
-  filmes.push(novoFilme);
+
+  if (filmes.some(filmeSalvo => filmeSalvo.titulo === novoFilme.titulo)) console.log("Erro, titulo já existe") 
+  else filmes.push(novoFilme)
+
+  
   console.log(filmes);
+
+  document.getElementById('titulo').value = ''
+  document.getElementById('lancamento').value = ''
+  document.getElementById('elenco').value = ''
+  document.getElementById('genero').value = ''
+
 });
