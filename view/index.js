@@ -7,7 +7,7 @@ const menu = document.querySelector(".menu");
 const addButton = document.querySelector(".add-button");
 const addMenu = document.querySelector(".add-menu");
 const buttonOption = document.querySelectorAll(".btnOpt");
-
+const form = document.getElementById("formulario-filme");
 
 burguer.addEventListener("click", () => {
   upbar.classList.toggle("upcross");
@@ -57,3 +57,19 @@ const filmes = [
     gênero: "Ficção científica",
   },
 ];
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const titulo = document.getElementById("titulo").value;
+  const lançamento = document.getElementById("lancamento").value;
+  const elenco = document.getElementById("elenco").value;
+  const gênero = document.getElementById("genero").value;
+  const novoFilme = {
+    titulo: titulo,
+    lançamento: lançamento,
+    elenco: elenco,
+    gênero: gênero,
+  };
+  filmes.push(novoFilme);
+  console.log(filmes);
+});

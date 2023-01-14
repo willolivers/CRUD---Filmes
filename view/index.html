@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="header-left">CRUD</h1>
+      <a href="index.html" class="header-left">CRUD</a>
       <div class="header-right">
         <div id="frame">
           <a href="#" class="bars" class="menu-button">
@@ -27,14 +27,28 @@
       </div>
       <menu class="menu">
         <a href="#">Pesquisar</a>
-        <a href="#">Adicionar</a>
+        <a href="add.html">Adicionar</a>
         <a href="#">Fale Conosco</a>
         <a href="#">Sobre</a>
       </menu>
     </header>
     
+   	    <button class="add-button" onclick="form()">+</button>
     <button class="add-button" onclick="form()">+</button>
     <menu class="add-menu">
+      <!--<form action="/movies" method="post" class="form">
+        <label for="nameMovie">Filme:</label>
+        <input type="text" name="nameMovie" id="nMovie">
+        <select name="categorias" id="categoria">
+          <option value="Ação">Ação</option>
+          <option value="Ação">Aventura</option>
+          <option value="Ação">Comedia</option>
+          <option value="Ação">Drama</option>
+        </select>
+        <label for="nota">Nota do filme:</label>
+        <input type="range" name="nota" id="nota" step="1" max="10">
+      </form>-->
+      <a href="#" class="btnOpt">Pesquisar</a>
       <!--<form action="/movies" method="post" class="form">
         <label for="nameMovie">Filme:</label>
         <input type="text" name="nameMovie" id="nMovie">
@@ -51,6 +65,7 @@
       </form>-->
       <a href="#" class="btnOpt">Pesquisar</a>
       <div class="line"></div>
+      <a href="add.html" class="btnOpt">Adicionar</a>
       <a href="#" class="btnOpt">Adicionar</a>
       <div class="line"></div>
       <a href="#" class="btnOpt">Fale Conosco</a>
