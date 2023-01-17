@@ -9,6 +9,10 @@
 }
 
 @media (max-width: 500px) {
+  body{
+    min-height: 500px;
+  }
+
   #frame {
     display: grid;
     place-items: center;
@@ -162,15 +166,15 @@
     right: 20px;
     width: 50px;
     height: 50px;
-    border-radius: 25px;
+    border-radius: 50%;
     border-style: unset;
-    background-color: #9093dc;
     color: #ffffff;
     font-size: 60px;
     line-height: 50px;
     text-align: center;
     transition: background-color 0.3s ease;
-    box-shadow: 0px 0px 6px 3px rgb(255 255 255 / 45%);
+    background: linear-gradient(145deg, #8284c6, #9a9deb);
+    box-shadow: 3px 3px 8px #686a9e, -3px -3px 8px #b8bcff;
     z-index: 999;
   }
 
@@ -289,7 +293,7 @@
   #containerFilm{
     margin: 20px 10px 10px 10px;
     padding: 5px;
-    height: 60%;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,6 +329,7 @@
   footer {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
     height: 170px;
     background-color: var(--color04);
